@@ -1,0 +1,7 @@
+numeric_video_controller__main:
+    path: /video
+    defaults: { _controller: numeric.video.controller:main }
+
+numeric_video_controller__main2:
+    path: /video/
+    defaults: { _controller: numeric.video.controller:main }

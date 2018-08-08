@@ -1,0 +1,15 @@
+services:
+    numeric.video.listener:
+        class: numeric\video\event\main_listener
+        arguments:
+            - '@controller.helper'
+            - '@template'
+        tags:
+            - { name: event.listener }
+
+    numeric.video.controller:
+        class: numeric\video\controller\main
+        arguments:
+            - '@controller.helper'
+            - '@template'
+            - '@user'
